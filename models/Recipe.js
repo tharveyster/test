@@ -1,5 +1,5 @@
-const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
+const { Model, DataTypes } = require("sequelize");
+const sequelize = require("../config/connection");
 
 class Recipe extends Model {}
 
@@ -23,11 +23,11 @@ Recipe.init(
       allowNull: false,
       defaultValue: DataTypes.NOW,
     },
-    origin: {
+    user_id: {
       type: DataTypes.STRING,
       references: {
-        model: 'user',
-        key: 'username',
+        model: "user",
+        key: "id",
       },
     },
   },
@@ -36,7 +36,7 @@ Recipe.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'recipe',
+    modelName: "recipe",
   }
 );
 
