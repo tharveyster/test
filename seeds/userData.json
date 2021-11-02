@@ -1,0 +1,16 @@
+[
+  {
+    "firstName": "Homer",
+    "lastName": "Simpson",
+    "username": "homer_simpson",
+    "email": "homer@simpsons.com",
+    "password": "password12345"
+  },
+  {
+    "firstName": "Marge",
+    "lastName": "Simpson",
+    "username": "marge_simpson",
+    "email": "marge@simpsons.com",
+    "password": "password12345"
+  }
+]
