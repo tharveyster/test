@@ -20,3 +20,6 @@ router.post("/", async (req, res) => {
 // Login route
 
 // Logout route
+
+
+module.exports = router;

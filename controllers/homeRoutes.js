@@ -2,6 +2,7 @@ const router = require("express").Router();
 const { Recipe, User } = require("../models");
 //const withAuth = require('../utils/auth');
 
+// Get all recipes route
 router.get("/", async (req, res) => {
   try {
     const recipeData = await Recipe.findAll({
@@ -23,3 +24,5 @@ router.get("/", async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+module.exports = router;
